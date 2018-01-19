@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <form>
+        <div class="form-group">
+          <fieldset class="inline">
+
+            <legend>
+              <h1 class="heading-xlarge">
+                Are you sure?
+              </h1>
+            </legend>
+            <div class="form-group">
+              <label class="form-label" for="ni-number">
+              Enter your response to the above question.s
+            </div>
+            <div class="form-group">
+              <span class="form-hint">
+                Come on, hurry up!
+                <br>
+                For example, ‘I am not sure’.
+                </span>
+              </label>
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="ni-number" type="text" name="ni-number">
+            </div>
+            <div class="form-group">
+              <a class="button button-start" href="page3.html" role="button">Next</a>
+            </div>
+
+          </fieldset>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
